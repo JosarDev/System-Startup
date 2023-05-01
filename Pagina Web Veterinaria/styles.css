@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 700px;
+    margin: auto;
+    width: 700px;
+}
+header{
+    height: 150px;
+}
+header img{
+    height: 150px;
+    width: 700px;
+}
+nav{
+    background-color: #1c4a48;
+    height: 40px;
+    border-radius: 0px 0px 15px 15px;
+    padding-top: 10px;
+}
+ul li {
+    display: inline;
+    color: white;
+    font-size: 20px;
+    border-right: 3px solid white;
+    padding: 10px 40px;
+    text-align: center;
+}
+section{
+    height: 380px;
+    float: left;
+    width: 380px;
+    margin: 10px 0px 10px 0px;
+}
+.Texto1{
+    height: 180px;
+    background-color: #fbf5b9;
+    border-radius: 500px;
+    border-radius: 15px 15px 0px 0px;
+}
+section img{
+    height: 100px;
+    width: 120px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 10px;
+}
+.Texto2{
+    height: 200px;
+    background-color: #fbf3b9;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 0px;
+}
+aside{
+    height: 390px;
+    display: inline-block;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #18504c;
+    margin: 10px 0px 10px 10px;
+}
+aside header{
+    height: 20px;
+    background-color:#0a2826;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    text-align: center;  
+    padding: 10px 0px;
+    font-size: 20px;
+}
+aside ul li{
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    padding: 4px 20px;
+}
+aside input{
+    height: 20px;
+    width: 180px;
+}
+.bnt{
+    border: 0px black;
+    border-radius: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 26px;
+    width: 110px;
+}
+footer{
+    height: 70px;
+    background-color: #0a2826;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+}
