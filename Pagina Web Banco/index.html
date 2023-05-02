@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylos.css">
+    <title>Pagina Web Bancoop</title>
+</head>
+<body>
+    <main>
+        <header><img src="img/logo.jpg" alt="banner de banco" id="encabezado"></header>
+        <nav>
+            <ul>
+                <li class="menu"><strong> Créditos </strong></li>
+                <li class="menu"><strong> Leasing </strong></li>
+                <li class="menu"><strong> Ahorros </strong></li>
+                <li class="menu" id="menu-sin-borde"><strong> Servicio al Cliente </strong></li>
+            </ul>
+        </nav>
+        <aside>
+            <article class="usuario">
+                <h3 class="tituloIngreso">INGRESAR A TU CUENTA</h3>
+                <label for="usuario">
+                    <span>Cuenta:</span>
+                    <input id="cuenta" type="text" placeholder="Numero de cuenta">
+                </label>
+                <br/>
+                <label for="tipo">
+                    <span>Tipo:</span>
+                    <input id="tipo" type="text">
+                </label>
+                <br/>
+                <label for="clave">
+                    <span>Clave:</span>
+                    <input id="clave" type="text" placeholder="Ingrese Nombre">
+                </label>
+                <br/>
+                <button>Ingresar</button>
+            </article>
+
+            <article class="usuario" id="transacciones">
+                <p class="subtituloAmarillo"><i>TRANSACCIONES</i></p>
+                <p class="pagos">Banca Personal</p>
+                <p class="pagos">Banca Empresarial</p>
+                <p class="pagos">Banca Seguros</p>
+                <p class="pagos">Pago de Facturas</p>
+                <p class="subtituloAmarillo"> <i>TARJETAS DE CRÉDITO</i></p>
+                <p class="pagos">Credi Visa</p>
+                <p class="pagos" id="pagos-sin-borde">Credi Mastercard</p>
+            </article>
+        </aside>
+        <section>
+            <article class="cuadro" id="cuadro1">
+             <img src="img/cuadro1.jpg" alt="libros" class="imagen">
+            </article>
+            <article class="cuadro" id="cuadro2">
+             <img src="img/cuadro2.jpg" alt="targeta de credito" class="imagen">
+            </article>
+            <article class="cuadro" id="cuadro3">
+             <img src="img/cuadro3.jpg" alt="casa alcancia" class="imagen">
+            </article>
+            <article class="cuadro" id="cuadro4">
+             <img src="img/cuadro4.jpg" alt="llaves de vehiculo" class="imagen">
+            </article>
+        </section>
+        <footer>
+            <p class="paginafinal" id="pieDePaginaCentrar">Contáctenos</p>
+            <p class="paginafinal">Línea gratuita 018000-00001</p>
+            <p class="paginafinal">Banco entídad financiera - Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>
