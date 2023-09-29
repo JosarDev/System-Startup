@@ -1,0 +1,49 @@
+Public Class Form1
+
+    Private Sub BtnGuardar_Click(sender As Object, e As EventArgs) Handles BtnGuardar.Click
+        If String.IsNullOrWhiteSpace(TxtNombres.Text) OrElse
+           String.IsNullOrWhiteSpace(TxtApellidos.Text) OrElse
+           String.IsNullOrWhiteSpace(CBoxEdad.Text) OrElse
+           String.IsNullOrWhiteSpace(TxtTelefono.Text) OrElse
+           String.IsNullOrWhiteSpace(TxtCorreo.Text) OrElse
+           String.IsNullOrWhiteSpace(TxtDireccion.Text) OrElse
+           String.IsNullOrWhiteSpace(CBoxCiudad.Text) OrElse
+           String.IsNullOrWhiteSpace(CBoxPais.Text) Then
+            MessageBox.Show("Por favor, complete todos los campos obligatorios.", "Campos Incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim nombres As String = TxtNombres.Text
+        Dim apellidos As String = TxtApellidos.Text
+        Dim edad As String = CBoxEdad.Text
+        Dim telefono As String = TxtTelefono.Text
+        Dim correo As String = TxtCorreo.Text
+        Dim direccion As String = TxtDireccion.Text
+        Dim ciudad As String = CBoxCiudad.Text
+        Dim pais As String = CBoxPais.Text
+
+        Dim informacion As String =
+             $"Nombres: {nombres}{vbCrLf}" &
+             $"Apellidos: {apellidos}{vbCrLf}" &
+             $"Edad: {edad}{vbCrLf}" &
+             $"Telefono: {telefono}{vbCrLf}" &
+             $"Correo: {correo}{vbCrLf}" &
+             $"Direccion: {direccion}{vbCrLf}" &
+             $"Ciudad: {ciudad}{vbCrLf}" &
+             $"País: {pais}{vbCrLf}"
+
+        RTBInformacion.Text = informacion
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim edad As Integer
+        For edad = 0 To 130
+            CBoxEdad.Items.Add(edad)
+        Next
+        CBoxEdad.SelectedIndex = 0
+    End Sub
+
+    Private Sub BtnSalir_Click(sender As Object, e As EventArgs) Handles BtnSalir.Click
+        Me.Close()
+    End Sub
+End Class
